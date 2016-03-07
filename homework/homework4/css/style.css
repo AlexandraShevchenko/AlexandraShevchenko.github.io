@@ -1,0 +1,149 @@
+body {
+  background-image: url("../images/bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.countries li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+}
+.countries {
+  float: right;
+  margin-top: -100px;
+  margin-right: 180px;
+  color: #128aa7;
+  font-family: Tahoma;
+  font-size: 10px;
+}
+.countries li a {
+  text-align: center;
+  color: #128aa7;
+}
+.contacts {
+  color: #128aa7;
+  font-family: Tahoma;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: -200px;
+  margin-right: 190px;
+  float:right;
+}
+.logo img {
+  margin-left: 200px;
+  margin-top: 86px;
+  position: relative;
+}
+.logo p {
+  color: #128aa7;
+  font-family: Tahoma;
+  font-size: 12px;
+  position: absolute;
+  top: 180px;
+  left: 295px;
+}
+.image img {
+  margin-left: 179px;
+  margin-top: -4px;
+  width: 1236px;
+  height: 260px;
+}
+.menu {
+  display: block;
+  list-style: none;
+  margin-left: 139px;
+  margin-top: -21px;
+}
+.menu ul:after {
+  display: block;
+  content: ' ';
+  clear: both;
+  float: none;
+}
+ul.menu > li {
+  float: left;
+  position: relative;
+}
+.menu li {
+  width: 190px;
+  text-align: center;
+}
+ul.menu > li > a {
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: #323232;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 14px;
+}
+.menu li:nth-child(2) {
+  width: 98px;
+}
+ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: #323232;
+  color: white;
+  font-family: Tahoma;
+  font-size: 14px;
+}
+ul.submenu > li {
+  display: block;
+
+}
+ul.submenu > li > a {
+  display: block;
+  padding: 3px;
+  color: white;
+  width: 100px;
+  background-color: #323232;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 14px;
+}
+ul.menu > li:hover > ul.submenu {
+  display: block;
+}
+.fon {
+  clear: both;
+}
+.left-column {
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 25px;
+  border-right: 1px solid #c7cacf;
+  color: #424c43;
+  background-color: #edeef0;
+  width: 210px;
+  height: 710px;
+  padding-left: 20px;
+  margin-left: 180px;
+}
+.right-column {
+  text-align: right;
+  margin-top: -100px;
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 25px;
+  border-left: 1px solid #c7cacf;
+  color: #424c43;
+  background-color: #edeef0;
+  width: 210px;
+  height: 710px;
+  padding-right: 20px;
+  margin-left: 1185px;
+  margin-top: -710px;
+}
+span {
+  font-family: Tahoma;
+  font-size: 18px;
+  padding: 30px;
+}
+.footer {
+  color: white;
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 12px;
+  margin-top: 10px;
+}
