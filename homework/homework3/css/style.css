@@ -1,0 +1,150 @@
+body {
+  background: #f9f9f9;
+  font-family: "Open Sans";
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/2211.ttf");
+}
+.wrapper {
+  padding: 0 auto;
+  margin: 0 auto;
+  background: #fff;
+}
+.fitness {
+  margin-top: 35px;
+  margin-left: 207px;
+  margin-bottom: 25px;
+}
+
+.bike img {
+  width:677px;
+  height: 400px;
+  margin: 50px 210px;
+  position: relative;
+  left: 335px;
+  bottom: 308px;
+  border: 1px solid lightgrey;
+  align: top;
+}
+
+.header li {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 40px;
+  margin: 0 1px;
+}
+.header ul {
+  font-size: 0;
+  line-height: 0;
+  background-color: #555555;
+  margin-left: 215px;
+  margin-right: 50px;
+  border-right: none;
+  width: 967px;
+}
+
+.header li:nth-child(3) {
+  margin-left: 60px;
+}
+.header li:last-child {
+  margin-left: 40px;
+}
+.header li:hover {
+  margin: 0;
+  border-right: 1px solid #838383;
+  border-left: 1px solid #838383;
+  background-color: #393939;
+}
+.header a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  display: block;
+  padding: 0 30px;
+}
+#sidebar {
+  margin-top: 25px;
+  margin-left: 175px;
+  margin-right: 50px;
+  float: left;
+}
+#sidebar li {
+  list-style: none;
+  border: 1px solid lightgrey;
+  width: 240px;
+  height: 40px;
+}
+#sidebar a {
+  font-size: 13px;
+  color: #656363;
+  padding-left: 25px;
+  text-decoration: none;
+}
+#sidebar li:hover {
+  background-color: #f9f9f9;
+  color: #2c2c2c;
+}
+.content::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.bike p{
+  margin-left: 577px;
+  margin-top: -300px;
+  color: #2c2c2c;
+  font-size: 13px;
+  line-height: 21px;
+}
+.footer::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.footer li{
+  display: inline-block;
+  font-size: 13px;
+  line-height: 40px;
+}
+.footer ul {
+  font-size:0;
+  line-height: 0;
+  background-color: #e1e1e1;
+  width: 967px;
+  margin-left: 220px;
+  margin-right: 50px;
+  margin-top: 60px;
+  float: left;
+}
+.footer li:first-child {
+  padding-right: 30px;
+}
+.footer li:nth-child(2) {
+  text-decoration: underline;
+  padding-left: 60px;
+}
+.footer li:nth-child(3) {
+  padding-left: 130px;
+}
+.footer li:nth-child(4) {
+  padding-left: 100px;
+}
+.footer li:last-child {
+  padding-left: 270px;
+}
+.footer a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+.copyright {
+  float:right;
+  color: #2c2c2c;
+  font-size: 13px;
+  margin-right: 350px;
+  margin-top: -30px;
+}
