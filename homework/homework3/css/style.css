@@ -44,13 +44,7 @@ body {
   margin: 0 1px;
 }
 .header ul {
-  font-size: 0;
-  line-height: 0;
   background-color: #555555;
-  margin-left: 5px;
-  margin-right: 50px;
-  border-right: none;
-  width: 900px;
 }
 .header li:hover {
   margin: 0;
@@ -67,7 +61,6 @@ body {
 }
 #sidebar {
   margin-top: 40px;
-  margin-left: 5px;
   margin-right: 50px;
   float: left;
   width: 200px;
@@ -135,4 +128,6 @@ body {
   float:right;
   color: #2c2c2c;
   font-size: 13px;
+  line-height: 30px;
+  margin: 0 20px 0 0 0;
 }
