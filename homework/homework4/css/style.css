@@ -10,13 +10,24 @@ body {
 }
 .wrapper {
   width: 1000px;
-  height: 1020px;
   margin: 0 auto;
   background-color: #fff;
 }
+
+.header::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.logo {
+  float: left;
+  position: relative;
+}
 .logo img {
   margin-left: 10px;
-  margin-top: 45px;
+  margin-top: 2px;
   position: relative;
 }
 .logo p {
@@ -27,21 +38,22 @@ body {
   margin-top: -70px;
 }
 
+.header-right {
+  float: right;
+}
 .contacts {
   color: #128aa7;
   font-size: 12px;
   line-height: 20px;
-  margin-top: -170px;
-  margin-right: 20px;
-  float:right;
+  margin-left: 220px;
 }
 
 .countries {
-  float: right;
   color: #128aa7;
   font-size: 10px;
   margin-right: 15px;
-  margin-top: -75px;
+  margin-top: 25px;
+  clear: both;
 }
 .countries li {
   list-style: none;
@@ -53,33 +65,30 @@ body {
   color: #128aa7;
 }
 
-.content img {
-  margin-top: -4px;
+.image {
   width: 1000px;
   height: 237px;
 }
 
-.menu {
-  margin-top: -5px;
-}
-.menu::after {
-  content: " ";
-  clear: both;
-  width:100%;
+.main-menu::after {
+  content: ".";
+  display: block;
   height: 0;
+  clear: both;
+  visibility: hidden;
 }
-.menu > li {
+.main-menu > li {
   float: left;
   list-style: none;
   font-size: 14px;
 }
-.menu li {
+.main-menu li {
   list-style: none;
   position: relative;
 }
-.menu a {
+.main-menu a {
   display: block;
-  padding: 9px 35px;
+  padding: 9px 38px;
   color: white;
   background-color: #323232;
   text-decoration: none;
@@ -91,13 +100,8 @@ body {
   left: 0;
   line-height: 10px;
 }
-.menu li:hover .submenu {
+.main-menu li:hover .submenu {
   display: block;
-}
-.menu img {
-  width: 10px;
-  height: 10px;
-  padding-left: 5px;
 }
 
 .fon {
@@ -143,9 +147,9 @@ span {
 }
 
 .footer {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: -15px;
+  margin-bottom: 30px;
 }
