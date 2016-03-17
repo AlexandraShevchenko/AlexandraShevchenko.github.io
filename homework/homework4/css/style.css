@@ -13,13 +13,6 @@ body {
   margin: 0 auto;
 }
 
-.header::after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
 .logo {
   float: left;
   position: relative;
@@ -37,10 +30,18 @@ body {
   margin-top: -70px;
 }
 
+
+.header::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 .header-right {
   float: right;
 }
-.header-right {
+.header-right::after {
   content: ".";
   display: block;
   height: 0;
@@ -52,6 +53,7 @@ body {
   color: #128aa7;
   font-size: 12px;
   line-height: 20px;
+  margin-right: 20px;
 }
 
 .countries {
@@ -59,6 +61,8 @@ body {
   color: #128aa7;
   font-size: 10px;
   clear: both;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .countries li {
   list-style: none;
