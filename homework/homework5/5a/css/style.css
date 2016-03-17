@@ -109,35 +109,43 @@ p {
   font-size: 11px;
 }
 
-button {
-  width: 290px;
-  line-height: 30px;
-  display: block;
-  font-family: "Helvetica Neue", Arial;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  background-color: #354d8b;
-  border: none;
+.fb {
+  display: inline-block;
+  background-color: #394f8b;
   border-radius: 5px;
-  margin-left: 135px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
   margin-top: 30px;
+  margin-left: 65px;
+  margin-right: 70px;
 }
-button:before {
-  content:"f";
-  line-height: 30px;
-  font-weight: bold;
-  font-size: 26px;
-  padding-right: 60px;
+.fb p {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 60px 0 40px;
+  font-size: 16px;
 }
-button:after {
-  content: ">";
-  line-height: 30px;
-  font-weight: bold;
+.fb::before {
+  content: "f";
+  display: inline-block;
+  vertical-align: middle;
   font-size: 20px;
-  padding-left: 50px;
+  font-weight: bold;
+  border-right: 2px groove #4c68a9;
+  padding: 5px 15px;
 }
+.fb::after {
+  content: "";
+  display: block;
+  background: url("../images/strelka.png") no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 20px;
+  top: 8px;
+}
+
 
 .ou {
   color: #999999;
