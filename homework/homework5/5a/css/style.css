@@ -5,13 +5,13 @@
 body {
   background: url("../images/bg.png") fixed no-repeat center center;
   font-family: "Helvetica Neue", Arial;
+  background-size: cover;
 }
 @font-face {
   font-family: "Helvetica Neue";
   src:url("../fonts/helveticaneuecyr-thin.otf");
 }
 .wrapper {
-  width: 1215px;
   margin: 0 auto;
 }
 
@@ -23,12 +23,11 @@ body {
   line-height: 40px;
 }
 .header ul {
-  width: 1215px;
+  width: 100%;
   text-align: right;
   background-color: #085292;
 }
 .header li:hover {
-  margin: 0;
   background-color: #4eabda;
 }
 .header a:hover {
@@ -40,14 +39,27 @@ body {
   padding: 0 15px;
   display: block;
 }
-.header li:nth-child(5) {
+.link a {
+  display: inline-block;
+  padding: 0 5px;
+}
+.link {
+  font-size: 14px;
+  color: #60b5ed;
+}
+.link a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.link:hover {
+  color: white;
+}
+.border {
   border-right: 1px solid #4eabda;
 }
-.header img {
-  width: 20px;
-  height: 20px;
-  padding-right: 5px;
-  margin-bottom: -7px;
+.image {
+  background: url("../images/flag.png") no-repeat left;
+  padding: 0 0 0 20px;
 }
 .header li:nth-child(6):hover {
   background: linear-gradient(to bottom, #50afdc, #2e7ac4);
@@ -56,11 +68,17 @@ body {
   background: linear-gradient(to bottom, #50afdc, #2e7ac4);
 }
 
-
-form {
+.bottom {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  font-size: 24px;
+  line-height: 60px;
+  border-bottom: 1px solid #bfc5bb;
+}
+.form {
   display: block;
   width: 560px;
-  height: 610px;
+  padding: 5px 5px;
   background-color: rgba(14, 14, 14, 0.75);
   position: absolute;
   left: 50%;
@@ -68,10 +86,7 @@ form {
   margin: -290px 0 0 -270px;
   text-align: center;
 }
-form h3 {
-  color: white;
-  line-height: 60px;
-}
+
 input {
   width: 280px;
   height: 35px;
@@ -87,6 +102,7 @@ input:focus {
   border: none;
 }
 #checkbox {
+  margin-left: 20px;
   width: 20px;
 }
 span {
