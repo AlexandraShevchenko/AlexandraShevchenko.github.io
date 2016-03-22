@@ -12,6 +12,7 @@ body {
   src:url("../fonts/helveticaneuecyr-thin.otf");
 }
 .wrapper {
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -30,6 +31,9 @@ body {
 .header li:hover {
   background-color: #4eabda;
 }
+.header li:nth-child(6):hover {
+    background-color: #085292;
+}
 .header a:hover {
   color: white;
 }
@@ -45,13 +49,13 @@ body {
 }
 .link {
   font-size: 14px;
-  color: #60b5ed;
+  color: white;
 }
-.link a:hover {
+.link a {
   color: white;
   text-decoration: underline;
 }
-.link:hover {
+.link a:hover {
   color: white;
 }
 .border {
@@ -59,11 +63,10 @@ body {
 }
 .image {
   background: url("../images/flag.png") no-repeat left;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 25px;
+  color: white;
 }
-.header li:nth-child(6):hover {
-  background: linear-gradient(to bottom, #50afdc, #2e7ac4);
-}
+
 .header li:nth-child(7):hover {
   background: linear-gradient(to bottom, #50afdc, #2e7ac4);
 }
@@ -85,6 +88,35 @@ body {
   top: 50%;
   margin: -290px 0 0 -270px;
   text-align: center;
+}
+
+.ouText {
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+}
+.ouText p {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  color: white;
+  font-size: 16px;
+}
+.ouText::before {
+  border-top: 1px solid #000;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  margin-right: 15px;
+}
+.ouText::after {
+  border-top: 1px solid #000;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  margin-left: 15px;
 }
 
 input {
@@ -120,9 +152,10 @@ span {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
 }
-p {
+.otherText {
   color: white;
   font-size: 11px;
+  padding: 10px 0;
 }
 
 .fb {
@@ -160,15 +193,4 @@ p {
   position: absolute;
   right: 20px;
   top: 8px;
-}
-
-
-.ou {
-  color: #999999;
-  margin-top: 35px;
-  font-size: 14px;
-}
-.ou img {
-  padding-left:5px;
-  padding-right: 5px;
 }
