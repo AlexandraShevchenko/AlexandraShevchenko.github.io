@@ -25,11 +25,15 @@ header {
   font-size: 12px;
   line-height: 16px;
 }
-.top span {
+span {
   color: #5e696d;
   line-height: 40px;
   font-family: Arial;
   font-size: 18px;
+}
+.top {
+  background: url("../images/phone.png") no-repeat left;
+  padding: 0 0 0 35px;
 }
 .number2 {
   margin-left: 5px;
@@ -142,6 +146,10 @@ nav a {
   font-size: 11px;
   color: #b1bcc0;
 }
+.menu2 li:first-child {
+  background: url("../images/cart.png") no-repeat left;
+  padding: 0 0 0 25px;
+}
 .menu2 span {
   font-family: Arial, Tahoma, sans-serif;
   font-size: 12px;
@@ -177,7 +185,7 @@ nav::after {
   list-style: none;
 }
 .catalog {
-  width: 172px;
+  width: 160px;
   list-style: none;
   border: 1px solid #8b979c;
   background-color: white;
@@ -186,16 +194,13 @@ nav::after {
   color: #114165;
   line-height: 25px;
   border-radius: 15px;
-  padding: 0 5px;
   box-shadow: 3px 4px 2px -2px #d3d8da;
+  background: url("../images/list.png") no-repeat left;
+  padding-left: 23px;
 }
-.catalog img {
-  margin-bottom: -4px;
-  margin-left: -2px;
-  margin-right: 3px;
-}
+
 .item {
-  width: 140px;
+  width: 125px;
   list-style: none;
   border: 1px solid #8b979c;
   background-color: white;
@@ -204,13 +209,10 @@ nav::after {
   color: #114165;
   line-height: 25px;
   border-radius: 15px;
-  padding: 0 5px;
+  background: url("../images/item.png") no-repeat left;
+  padding-left: 25px;
 }
-.item img {
-  margin-bottom: -5px;
-  margin-left: -2px;
-  margin-right: 3px;
-}
+
 #list {
   list-style-type: circle;
 }
@@ -247,19 +249,19 @@ nav::after {
   margin-top: -3px;
   border-radius: 5px;
 }
-.container img {
+figure img {
   width: 136px;
   height: 127px;
   border: 1px solid #a7b1b4;
   border-radius: 10px;
 }
-figure {
+.tovar {
   display: inline-block;
   padding-left: 22px;
   padding-right: 5px;
   padding-top: 10px;
 }
-figure > p {
+.tovar > p {
   color: #114165;
   font-family: Arial, Tahoma, sans-serif;
   font-size: 16px;
@@ -281,7 +283,13 @@ figcaption p {
   color: #1f2528;
   margin-top: -5px;
 }
-
+figcaption a {
+  font-family: "Lucida Sans", Tahoma, sans-serif;
+  font-size: 17px;
+  color: #206988;
+  font-weight: bold;
+  text-decoration: none;
+}
 .second {
   float: right;
 }
@@ -310,7 +318,7 @@ figcaption p {
   margin-left: 28px;
 }
 .brand {
-  width: 172px;
+  width: 155px;
   border: 1px solid #8b979c;
   background-color: white;
   font-family: "Lucida Sans", Tahoma, sans-serif;
@@ -318,14 +326,12 @@ figcaption p {
   color: #114165;
   line-height: 25px;
   border-radius: 15px;
-  padding: 0 5px;
+  background: url("../images/list.png") no-repeat left;
+  padding-left: 23px;
   box-shadow: 3px 4px 2px -2px #d3d8da;
   margin-top: -626px;
 }
-.brand img {
-  margin-bottom: -4px;
-  margin-right: 3px;
-}
+
 .tires {
   width: 126px;
   border: 1px solid #8b979c;
@@ -335,16 +341,13 @@ figcaption p {
   color: #114165;
   line-height: 25px;
   border-radius: 15px;
-  padding: 0 5px;
+  background: url("../images/item.png") no-repeat left;
+  padding-left: 25px;
   margin-top: 15px;
   margin-left: 15px;
   margin-bottom: 1px;
 }
-.tires img {
-  margin-bottom: -6px;
-  margin-left: -2px;
-  margin-right: 3px;
-}
+
 .discs {
   width: 126px;
   border: 1px solid #8b979c;
@@ -354,17 +357,20 @@ figcaption p {
   color: #114165;
   line-height: 25px;
   border-radius: 15px;
-  padding: 0 5px;
+  background: url("../images/item.png") no-repeat left;
+  padding-left: 25px;
   margin-top: 11px;
   margin-left: 15px;
   margin-bottom: 3px;
 }
-.discs img {
-  margin-bottom: -6px;
-  margin-left: -2px;
-  margin-right: 3px;
-}
 
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 .companies {
   margin-top: 35px;
   margin-left: 113px;
@@ -383,7 +389,7 @@ footer li {
   list-style: none;
   line-height: 10px;
   border-right: 1px solid #bec6c9;
-  padding-right: 4px;
+  padding: 0 10px;
 }
 footer li:last-child {
   border: none;
@@ -393,7 +399,6 @@ footer a {
   color: #bec6c9;
   font-family: Arial, Tahoma, sans-serif;
   font-size: 12px;
-  padding: 10px;
 }
 footer a:hover {
   color: #52abcb;
