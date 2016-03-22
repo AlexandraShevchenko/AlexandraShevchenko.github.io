@@ -12,10 +12,13 @@ body {
   src:url("../fonts/helveticaneuecyr-thin.otf");
 }
 .wrapper {
-  width: 1000px;
+  width: 1215px;
   margin: 0 auto;
 }
 
+.header {
+  background-color: #085292;
+}
 .header li {
   list-style: none;
   display: inline-block;
@@ -26,7 +29,6 @@ body {
 .header ul {
   width: 100%;
   text-align: right;
-  background-color: #085292;
 }
 .header li:hover {
   background-color: #4eabda;
@@ -46,17 +48,17 @@ body {
 .link a {
   display: inline-block;
   padding: 0 5px;
+  color: white;
+  text-decoration: underline;
 }
 .link {
   font-size: 14px;
   color: white;
-}
-.link a {
-  color: white;
-  text-decoration: underline;
+  padding: 0 10px;
+  background: linear-gradient(to bottom, #50afdc, #2e7ac4);
 }
 .link a:hover {
-  color: white;
+  text-decoration: none;
 }
 .border {
   border-right: 1px solid #4eabda;
@@ -65,10 +67,6 @@ body {
   background: url("../images/flag.png") no-repeat left;
   padding: 0 0 0 25px;
   color: white;
-}
-
-.header li:nth-child(7):hover {
-  background: linear-gradient(to bottom, #50afdc, #2e7ac4);
 }
 
 .bottom {
