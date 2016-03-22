@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  background-color: #085292;
+  background-image: url("../images/pattern.png")
 }
 .header li {
   list-style: none;
@@ -68,6 +68,7 @@ body {
   padding: 0 0 0 25px;
   color: white;
 }
+
 
 .bottom {
   font-family: "Helvetica Neue", Arial, sans-serif;
