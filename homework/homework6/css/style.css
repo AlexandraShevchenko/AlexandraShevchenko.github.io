@@ -12,16 +12,6 @@ header {
   margin-top: 15px;
 }
 
-.top input {
-  width: 105px;
-  display: inline-block;
-  border-radius: 1px;
-  border: none;
-  padding: 0 5px;
-  margin: 0 1px;
-  font-size: 12px;
-  line-height: 16px;
-}
 span {
   color: #5e696d;
   line-height: 40px;
@@ -34,15 +24,6 @@ span {
 }
 .number2 {
   margin-left: 5px;
-}
-.top .enter {
-  color: white;
-  font-family: "Lucida Sans", Tahoma, sans-serif;
-  font-size: 11px;
-  border-right: 1px solid white;
-  padding-right: 10px;
-  padding-left: 3px;
-  line-height: 25px;
 }
 
 .form {
@@ -74,9 +55,37 @@ span {
   text-decoration: underline;
   line-height: 25px;
 }
+.form .login {
+    width: 105px;
+    display: inline-block;
+    border-radius: 1px;
+    border: none;
+    padding: 0 5px;
+    margin: 0 1px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.form .password {
+  width: 105px;
+  display: inline-block;
+  border-radius: 1px;
+  border: none;
+  padding: 0 5px;
+  margin: 0 1px;
+  font-size: 12px;
+  line-height: 16px;
+}
 .icon {
   background: url("../images/person.png") no-repeat left;
   padding-left: 20px;
+}
+.form .submit {
+  color: white;
+  font-family: "Lucida Sans", Tahoma, sans-serif;
+  font-size: 11px;
+  border: none;
+  background: none;
+  padding: 0;
 }
 header::after {
   content: ".";
