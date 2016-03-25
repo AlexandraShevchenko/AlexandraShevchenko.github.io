@@ -85,7 +85,8 @@ span {
   font-size: 11px;
   border: none;
   background: none;
-  padding: 0;
+  padding-right: 5px;
+  border-right: 1px solid white;
 }
 header::after {
   content: ".";
@@ -106,14 +107,14 @@ header::after {
   box-shadow: 1px 3px 7px -2px #d3d8da;
 }
 #house {
-  padding-bottom: 5px;
-  padding-left: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
 }
 #img2 {
-  padding-bottom: 6px;
+  padding-bottom: 2px;
 }
 #letter {
-  padding-bottom: 6px;
+  padding-bottom: 2px;
   padding-right: 7px;
 }
 
