@@ -14,35 +14,25 @@
   font-family: "Open Sans ExtraBold";
   src: url("../fonts/OpenSans-ExtraBold.ttf");
 }
+body {
+  width: 100%;
+}
 .wrapper {
-  width: 2400px;
-  margin: 0 auto;
+  min-width: 960px;
 }
 header {
   background-image: url("../images/bg1.jpg");
   background-position: top center;
-  background-size: cover;
   height: 848px;
+  max-width: 2400px;
 }
-.header__name {
-  font-family: "League Gothic", Verdana, sans-serif;
-  font-size: 48px;
-  color: white;
-  text-shadow: 3px 2px 2px rgba(150, 150, 150, 0.87);
-  margin-left: 720px;
-  padding-top: 50px;
-}
-.header__name span {
-  font-family: "League Gothic", Verdana, sans-serif;
-  font-size: 48px;
-  background: linear-gradient(#745083, #33263a);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: none;
+.header__image {
+  margin-left: 320px;
+  padding-top: 65px;
 }
 header ul {
   float: right;
-  margin-right: 740px;
+  margin-right: 330px;
   margin-top: -35px;
 }
 header li {
@@ -86,7 +76,7 @@ header::after {
 }
 .header__tab {
   float: right;
-  margin-right: 870px;
+  margin-right: 470px;
   margin-top: 90px;
 }
 .slider {
@@ -97,7 +87,7 @@ header::after {
 .slider__text {
   display: block;
   padding-top: 80px;
-  padding-left: 700px;
+  padding-left: 320px;
 }
 .slider__text--header1 {
   color: white;
@@ -122,7 +112,7 @@ header::after {
   float: right;
   width: 256px;
   height: 415px;
-  margin-right: 810px;
+  margin-right: 410px;
   margin-top: -330px;
 }
 .slider__image::after {
@@ -141,7 +131,7 @@ section a:hover {
   text-shadow: 1px -1px 3px rgba(255, 255, 255, 1);
 }
 .section__content {
-  margin-left: 700px;
+  margin-left: 310px;
   padding-top: 70px;
 }
 .section__column1 {
@@ -243,7 +233,7 @@ section a:hover {
 }
 .content__column1 {
   color: #454545;
-  margin-left: 730px;
+  margin-left: 350px;
   padding-top: 100px;
 }
 .content__column1 img {
@@ -277,7 +267,7 @@ section a:hover {
 .content__updates {
   color: #454545;
   float: right;
-  margin-right: 730px;
+  margin-right: 300px;
   margin-top: -270px;
 }
 .content__updates::after {
@@ -338,13 +328,13 @@ section a:hover {
   background: #8a8a8a;
 }
 .content__tab {
-  margin-left: 900px;
+  margin-left: 520px;
   margin-top: 15px;
 }
 .content__images {
   border-top: 1px solid #e6e6e6;
   margin-top: 60px;
-  padding-left: 800px;
+  padding-left: 400px;
 }
 .content__images img {
   padding: 15px 20px;
@@ -358,7 +348,7 @@ article {
   float: left;
   width: 290px;
   height: 210px;
-  margin-left: 730px;
+  margin-left: 330px;
   padding-top: 100px;
 }
 .article__first--header {
@@ -389,7 +379,7 @@ article {
 .article__second {
   width: 290px;
   height: 210px;
-  margin-left: 1070px;
+  margin-left: 670px;
   padding-top: 92px;
 }
 .article__second--header {
@@ -408,7 +398,7 @@ article {
   float: right;
   width: 290px;
   height: 210px;
-  padding-right: 690px;
+  padding-right: 290px;
   margin-top: -209px;
 }
 .article__third--header {
@@ -429,7 +419,7 @@ footer {
   height: 113px;
 }
 footer ul {
-  margin-left: 710px;
+  margin-left: 310px;
   padding-top: 40px;
 }
 footer li {
@@ -451,7 +441,7 @@ footer a {
   font-family: "Open Sans", Verdana, sans-serif;
   font-size: 12px;
   text-shadow: 3px 2px 2px rgba(150, 150, 150, 0.87);
-  padding-right: 680px;
+  padding-right: 300px;
   margin-top: -25px;
 }
 .footer__design span {
