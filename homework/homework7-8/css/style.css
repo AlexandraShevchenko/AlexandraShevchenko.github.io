@@ -20,6 +20,7 @@ body {
 .wrapper {
   min-width: 960px;
 }
+
 header {
   background-image: url("../images/bg1.jpg");
   background-position: top center;
@@ -55,6 +56,30 @@ header a:hover {
   line-height: 33px;
   border-bottom: 3px solid #edbfff;
 }
+#submenu {
+  display: none;
+  background-color: rgba(61, 48, 69, 0.75);
+  width: 245px;
+  border-radius: 10px;
+  border: 1px solid #403348;
+}
+#submenu li {
+  display: block;
+  border-bottom: 1px solid #36283e;
+  padding: 0;
+}
+#submenu li:last-child {
+  border-bottom: none;
+}
+#submenu a {
+  line-height: 45px;
+  text-align: center;
+  text-shadow: none;
+}
+#submenu a:hover {
+  background-color: rgba(45, 37, 51, 0.75);
+}
+
 header::after {
   content: ".";
   display: block;
@@ -73,10 +98,12 @@ header::after {
 .header__tab span:hover {
   border: 3px solid #43454d;
   background: #e7e7e7;
+  width: 15px;
+  margin: 0 2px;
 }
 .header__tab {
   float: right;
-  margin-right: 470px;
+  margin-right: -190px;
   margin-top: 90px;
 }
 .slider {
@@ -102,11 +129,13 @@ header::after {
 }
 .slider__text--text {
   width: 500px;
-  height: 140px;
   color: white;
   font-family: "Open Sans", Verdana, sans-serif;
   font-size: 17px;
   line-height: 24px;
+}
+#break {
+  display: none;
 }
 .slider__image {
   float: right;
@@ -244,7 +273,7 @@ section a:hover {
   font-size: 30px;
   line-height: 24px;
 }
-.content__column1 span {
+.content__column1 #header {
   color: #edbfff;
   font-family: "League Gothic", Verdana, sans-serif;
   font-size: 30px;
@@ -259,6 +288,10 @@ section a:hover {
   margin-top: -270px;
   margin-left: 35px;
 }
+#word {
+  display: none;
+}
+
 .content__column1--text img {
   margin-left: -60px;
   margin-top: -10px;
@@ -339,10 +372,19 @@ section a:hover {
 .content__images img {
   padding: 15px 20px;
 }
+.content__images--two {
+  display: none;
+}
+#link {
+  display: none;
+}
 
 article {
   background-color: #ececec;
   height: 380px;
+}
+#article {
+  display: none;
 }
 .article__first {
   float: left;
