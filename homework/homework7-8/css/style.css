@@ -76,9 +76,16 @@ header a:hover {
   text-align: center;
   text-shadow: none;
 }
+#submenu li:last-child a {
+  border-radius: 0 0 10px 10px;
+}
+#submenu li:first-child a {
+  border-radius: 10px 10px 0 0;
+}
 #submenu a:hover {
   background-color: rgba(45, 37, 51, 0.75);
 }
+
 
 header::after {
   content: ".";
@@ -91,15 +98,16 @@ header::after {
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin: 0 2px;
   background-color: rgba(62, 66, 74, 0.75);
   border-radius: 50%;
+  margin: 0 3px;
 }
 .header__tab span:hover {
   border: 3px solid #43454d;
   background: #e7e7e7;
-  width: 15px;
-  margin: 0 2px;
+  width: 12px;
+  height: 12px;
+  margin: -2px 2px;
 }
 .header__tab {
   float: right;
@@ -359,6 +367,9 @@ section a:hover {
 .content__tab span:hover {
   border: 2px solid #fff;
   background: #8a8a8a;
+  width: 14px;
+  height: 14px;
+  margin: -1px 2px;
 }
 .content__tab {
   margin-left: 520px;
