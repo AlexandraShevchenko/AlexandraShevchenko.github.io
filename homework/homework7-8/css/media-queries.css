@@ -18,8 +18,8 @@
   }
   .header__tab {
     float: none;
-    margin-left: 610px;
-    margin-top: 110px;
+    margin-left: 560px;
+    margin-top: 40px;
   }
   .slider {
     height: 400px;
@@ -196,7 +196,7 @@
     display: block;
     position: absolute;
     top: 25%;
-    left: 18%;
+    left: 23%;
   }
   header ul li:hover #main-menu {
     display: none;
@@ -246,6 +246,7 @@
   }
   .slider__image {
     float: none;
+    margin-top: -375px;
   }
   #true {
     display: none;
@@ -375,6 +376,10 @@
   header ul {
     float: none;
     margin-left: 120px;
+  }
+  header ul li:hover #submenu {
+    top: 23%;
+    left: -26%;
   }
   .slider {
     background: none;
