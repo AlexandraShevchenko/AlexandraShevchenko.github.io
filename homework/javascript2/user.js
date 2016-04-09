@@ -1,14 +1,14 @@
 window.onload = function () {
-  var arr = [];
+  var names = [];
   for (var i = 0; i < 5; i++) {
-    arr[i] = prompt ('enter a name', '');
+    names[i] = prompt ('enter a name', '');
   }
   var user = prompt ('enter a user's name, '');
 
   var flag = false;
 
-  for (var i = 0; i < 5; i++) {
-    if (user === arr[i]) {
+  for (var i = 0; i < names.length; i++) {
+    if (user === names[i]) {
       flag = true;
     }
   }
