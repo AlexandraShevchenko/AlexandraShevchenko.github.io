@@ -1,7 +1,19 @@
-window.onload = function () {
-    var numb = prompt('enter a number', '');
-    var exp = prompt('enter an exponent', '');
-    var result = Math.pow(numb, exp);
+var number = prompt('Enter a number', '');
+var exponent = prompt('Enter an exponent', '');
 
-    console.log(result);
-}
+function pow(a, b){
+  var p = 1;
+   if(b == 0){
+    a = 1;
+   }
+   if(b < 0){
+    b = -b;
+    a = 1/a;
+   }
+   for(i = 1;i <= b; i++){
+    p = p*num;
+   }
+   return p;
+  }
+
+console.log();
