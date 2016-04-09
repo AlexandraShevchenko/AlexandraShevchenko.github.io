@@ -1,9 +1,9 @@
 window.onload = function () {
   var arr = [];
   for (var i = 0; i < 5; i++) {
-    arr[i] = prompt ('введите имя', '');
+    arr[i] = prompt ('enter a name', '');
   }
-  var user = prompt ('введите имя пользователя', '');
+  var user = prompt ('enter a user's name, '');
 
   var flag = false;
 
@@ -13,7 +13,7 @@ window.onload = function () {
     }
   }
    if (flag == true) {
-    alert(user + ', Вы успешно вошли');
+    alert(user + ', you are now logged in');
    }
    else {
     alert('error');
