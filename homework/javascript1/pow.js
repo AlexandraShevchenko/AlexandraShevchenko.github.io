@@ -16,4 +16,4 @@ function pow(a, b){
    return p;
   }
 
-console.log();
+console.log(pow(number, exponent));
