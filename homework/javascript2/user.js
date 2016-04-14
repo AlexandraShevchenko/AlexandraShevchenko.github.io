@@ -3,7 +3,7 @@ window.onload = function () {
   for (var i = 0; i < 5; i++) {
     names[i] = prompt ('enter a name', '');
   }
-  var user = prompt ('enter a user's name, '');
+  var user = prompt ('enter a user's name', '');
 
   var flag = false;
 
