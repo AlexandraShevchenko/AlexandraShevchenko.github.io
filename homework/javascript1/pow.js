@@ -11,9 +11,10 @@ function pow(a, b){
     a = 1/a;
    }
    for(i = 1;i <= b; i++){
-    p = p*num;
+    p = p*a;
    }
    return p;
   }
 
 console.log(pow(number, exponent));
+
