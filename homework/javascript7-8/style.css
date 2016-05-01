@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  font-family: Arial;
+  width: 550px;
+  padding: 10px;
+}
+fieldset {
+  padding: 10px;
+}
+div {
+  margin: 10px 10px;
+}
+span {
+  display: none;
+}
+#third {
+  margin-left: 11px;
+}
+#button {
+  width: 100px;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#button:hover {
+  background-color: #f5f0f0;
+}
+.tooltip:hover #firstname {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 290px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  color: grey;
+}
+.tooltip:hover #lastname {
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 290px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  color: grey;
+}
+.tooltip:hover #address {
+  display: block;
+  position: absolute;
+  top: 85px;
+  left: 290px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  color: grey;
+}
+
+.tabs {
+  font-family: Arial;
+  font-size: 16px;
+  color: #565a5c;
+  width: 500px;
+  margin: 40px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  border-top: none;
+}
+.tabs__caption {
+  height: 30px;
+  border: 1px solid black;
+  background-color: #4f859c;
+  border-radius: 5px 5px 0 0;
+}
+.tabs__caption li {
+  float: left;
+  display: inline;
+  margin: 2px 3px;
+  padding: 5px 20px;
+  cursor: pointer;
+  position: relative;
+  border: 1px sold grey;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  background-color: white;
+}
+.tabs__content {
+  display: none;
+  padding: 10px;
+}
+.tabs__content.active {
+  display: block;
+}
+.tabs__caption li.active {
+  background-color: #d4effa;
+}
