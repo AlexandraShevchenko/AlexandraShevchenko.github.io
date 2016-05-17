@@ -16,7 +16,7 @@
     <body>
         <div class="wrapper">
             <div class="jcarousel-wrapper">
-                <div class="jcarousel">
+                <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
                     <ul>
                         <li><img src="images/img1.jpg" width="600" height="400" alt=""></li>
                         <li><img src="images/img2.jpg" width="600" height="400" alt=""></li>
@@ -26,9 +26,8 @@
                         <li><img src="images/img6.jpg" width="600" height="400" alt=""></li>
                     </ul>
                 </div>
-                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-                <p class="jcarousel-pagination"></p>
+                <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
             </div>
         </div>
 
