@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript 11-12</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="js/jquery.myplugin.js"></script>
+      <script src="js/template.js"></script>
+      <script src="js/script.js"></script>
+  </head>
+  <body>
+
+    <div class="carousel-prev"><span>Prev</span></div>
+    <div class="carousel-hider">
+      <ul class="carousel-list">
+        <li class="carousel-element"><img src="images/img1.jpg"><p>Image 1</p></li>
+        <li class="carousel-element"><img src="images/img2.jpg"><p>Image 2</p></li>
+        <li class="carousel-element"><img src="images/img3.jpg"><p>Image 3</p></li>
+        <li class="carousel-element"><img src="images/img4.jpg"><p>Image 4</p></li>
+        <li class="carousel-element"><img src="images/img5.jpg"><p>Image 5</p></li>
+        <li class="carousel-element"><img src="images/img6.jpg"><p>Image 6</p></li>
+        <li class="carousel-element"><img src="images/img1.jpg"><p>Image 7</p></li>
+        <li class="carousel-element"><img src="images/img2.jpg"><p>Image 8</p></li>
+        <li class="carousel-element"><img src="images/img3.jpg"><p>Image 9</p></li>
+        <li class="carousel-element"><img src="images/img4.jpg"><p>Image 10</p></li>
+        <li class="carousel-element"><img src="images/img5.jpg"><p>Image 11</p></li>
+        <li class="carousel-element"><img src="images/img6.jpg"><p>Image 12</p></li>
+      </ul>
+    </div>
+    <div class="carousel-next"><span>Next</span></div>
+
+    <script type="text/html" id="test">
+      <% for (var i = 0; i < data.length; i++) { %>
+      <div class="first">
+        <h2><%= data[i].title%></h2>
+        <p><%= data[i].content%></p>
+      </div>
+      <div class="second">
+        <p><%= data[i].p%></p>
+        <ul>
+          <li><%= data[i].first%></li>
+          <li><%= data[i].second%></li>
+          <li><%= data[i].third%></li>
+        </ul>
+      </div>
+      <div class="third">
+        <p><%= data[i].phone%></p>
+        <p><%= data[i].number%></p>
+        <p><%= data[i].profile%></p>
+        <a href="https://vk.com/charliebtws"><%= data[i].link%></a>
+      </div>
+      <div class="forth">
+        <p><%= data[i].feedback%></p>
+        <p><%= data[i].description%></p>
+      </div>
+      <% }; %>
+    </script>
+
+  </body>
+</html>
