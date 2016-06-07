@@ -1,30 +1,42 @@
 'use strict';
 
-var title = 'Тест по программированию';
+$(function() {
 
-var questions=[
+var html = $('#test').html();
+var questions = [
 {
-    text: "Какие основное ограничения к объявлению переменных в строгом режиме?",
-    answers: ["Любая переменная должна объявляться с использованием ключевого слова var",
-          "Переменные функций должны объявляться с использованием ключевого слова var",
-          "Название переменных должно быть camel-case с маленькой буквы"],
+    title: 'Тест по программированию'
+},
+{
+    text1: "Какие основное ограничения к объявлению переменных в строгом режиме?",
+    answer1a: "Любая переменная должна объявляться с использованием ключевого слова var",
+    answer1b: "Переменные функций должны объявляться с использованием ключевого слова var",
+    answer1c: "Название переменных должно быть camel-case с маленькой буквы",
     correctAnswer: 0 // нумерация ответов с нуля!
 },
 {
-    text: "Чему равен this в функциях вызванных на глобальном уровне?",
-    answers: ["null",
-          "undefined",
-          "window"],
+    text2: "Чему равен this в функциях вызванных на глобальном уровне?",
+    answer2a: "null",
+    answer2b: "undefined",
+    answer2c: "window",
     correctAnswer: 1
 },
 {
-    text: "Какой из пунктов не верен по отношению к строгому режиму javascript?",
-    answers: ["Запрещено дублирование полей объектов",
-          "Запрещено дублирование параметров функции",
-          "Запрещено использование директивы eval"],
-    correctAnswer: 2
+    text3: "Какой из пунктов не верен по отношению к строгому режиму javascript?",
+    answer3a: "Запрещено дублирование полей объектов",
+    answer3b: "Запрещено дублирование параметров функции",
+    answer3c: "Запрещено использование директивы eval",
+    correctAnswer: 2,
+    button: "Проверить результаты"
 }
 ];
+
+var content = tmpl(html, {
+    data: questions
+});
+
+  $('body').append(content);
+
 
 localStorage.setItem ('test', JSON.stringify(questions));
 var test = localStorage.getItem ('test');
@@ -32,7 +44,6 @@ var data = JSON.parse(test);
 
 var yourAns = new Array;
 var score = 0;
-
 
 function Engine(question, answer) {yourAns[question]=answer;}
 
@@ -88,69 +99,4 @@ function clearForm(name) {
         f.elements[i].checked = false;
       }
 }
-
-
-
-/*var first = {
-  question: "Сколько будет 2*5?",
-  option1: 5,
-  option2: 10,
-  option3: 2
-};
-
-var second = {
-  question: "Сколько будет 3*6?",
-  option1: 6,
-  option2: 18,
-  option3: 22
-};
-
-var third = {
-  question: "Сколько будет 10/5?",
-  option1: 5,
-  option2: 0,
-  option3: 2
-};
-
-localStorage.setItem ('question1', JSON.stringify(first));
-localStorage.setItem ('question2', JSON.stringify(second));
-localStorage.setItem ('question3', JSON.stringify(third));
-
-var test1 = localStorage.getItem ('question1');
-var test2 = localStorage.getItem ('question2');
-var test3 = localStorage.getItem ('question3');
-
-var newDom = {
-  test: function (element, num) {
-    var newTitle = document.createElement('h2');
-    newTitle.innerHTML = "Тест по программированию";
-    document.body.appendChild(newTitle);
-
-    for (var i = 1; i <= num; i++) {
-      var newElement = document.createElement(element);
-      var newItem = document.createElement('li');
-      newItem.innerHTML = i + ". Вопрос №" + i;
-      document.body.appendChild(newElement);
-      newElement.appendChild(newItem);
-
-      for (var j = 1; j <= 3; j++) {
-        var newList = document.createElement('ul');
-        var newLine = document.createElement('li');
-        var newInput = document.createElement('input');
-        newInput.type = "checkbox";
-        newLine.innerHTML += "Вариант ответа №" + j;
-        newList.appendChild(newInput);
-        newList.appendChild(newLine);
-        newItem.appendChild(newList);
-      }
-    }
-
-    var checkResult = document.createElement('input');
-    checkResult.type = "button";
-    checkResult.value = 'Проверить мои результаты';
-    checkResult.id = 'submit'
-    document.body.appendChild(checkResult);
-  }
-}
-
-newDom.test('ul', 3);*/
+});
