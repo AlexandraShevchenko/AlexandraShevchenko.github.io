@@ -12,34 +12,14 @@
 
     <script type="text/template" id="test">
 	    <% for (var i = 0; i < data.length; i++) { %>
-	      <div class="first">
           <h1><%= data[i].title%></h1>
-          <p><%= data[i].text1%></p>
+          <p><%= data[i].text%></p>
 	        <ul>
-	          <li><%= data[i].answer1a%></li>
-            <li><%= data[i].answer1b%></li>
-            <li><%= data[i].answer1c%></li>
+	          <li><%= data[i].answer1%></li>
+            <li><%= data[i].answer2%></li>
+            <li><%= data[i].answer3%></li>
 	        </ul>
-	      </div>
-        <div class="second">
-          <p><%= data[i].text2%></p>
-	        <ul>
-            <li><%= data[i].answer2a%></li>
-            <li><%= data[i].answer2b%></li>
-            <li><%= data[i].answer2c%></li>
-	        </ul>
-	      </div>
-        <div class="third">
-          <p><%= data[i].text3%></p>
-	        <ul>
-            <li><%= data[i].answer3a%></li>
-            <li><%= data[i].answer3b%></li>
-            <li><%= data[i].answer3c%></li>
-	        </ul>
-          <form>
-            <button id="score"><%= data[i].button%></button>
-          </form>
-	      </div>
+          <button id="score"><%= data[i].button%></button>
 	      <% }; %>
 	    </script>
 
@@ -48,10 +28,6 @@
             <script>Score()</script>
   </div>
 <div id="overlay"></div>-->
-
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="js/tmpl.js"></script>
-<script src="js/script.js"></script>
 
 </body>
 </html>
