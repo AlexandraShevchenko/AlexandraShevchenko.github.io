@@ -6,14 +6,14 @@ body {
   text-align: center;
   margin-top: 300px;
 }
-.search {
+#formdata {
   width: 600px;
   height: 40px;
   font-size: 16px;
   border: 1px solid lightgrey;
   padding: 5px;
 }
-.button {
+#button {
   margin-top: 30px;
   background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
   background-color: #f2f2f2;
@@ -26,13 +26,24 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
-.button:hover {
+#button:hover {
   color: black;
   border: 1px solid lightgrey;
 }
-.search:hover {
+#formdata:hover {
   border: 1px solid grey;
 }
-.search:focus {
+#formdata:focus {
   border: 1px solid #1b75bf;
+}
+li {
+	list-style: none;
+	margin: 15px 0 10px 15px;
+}
+.links {
+	font-family: Tahoma;
+}
+.users {
+	font-style: italic;
+	font-weight: bold;
 }
