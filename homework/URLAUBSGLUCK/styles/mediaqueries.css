@@ -159,52 +159,40 @@
     padding-right: 14px;
     padding-left: 18px;
   }
-  .ideas .idea1 .idea-area {
-    background-size: 217%;
-    background-position-x: 36%;
-    background-position-y: 44%;
-    width: 235px;
+  .ideas .idea1 .idea-area, .ideas .idea2 .idea-area, .ideas .idea3 .idea-area, .ideas .idea4 .idea-area, .ideas .idea5 .idea-area, .ideas .idea6 .idea-area, .ideas .idea7 .idea-area {
     height: 310px;
-  }
-  .ideas .idea2 .idea-area {
-    background-size: 138%;
-    background-position-x: 9%;
-    background-position-y: 50%;
     width: 235px;
-    height: 310px;
   }
-  .ideas .idea3 .idea-area {
-    background-size: 265%;
-    background-position-x: 93%;
-    background-position-y: 58%;
-    width: 235px;
-    height: 310px;
-  }
-  .ideas .idea4 .idea-area {
-    background-size: 238%;
-    background-position-x: 22%;
-    background-position-y: 38%;
-    width: 235px;
-    height: 310px;
-  }
-  .ideas .idea5 .idea-area {
-    background-size: 120%;
-    background-position-y: 71%;
+  .ideas .idea5 .idea-area, .ideas .idea6 .idea-area {
     width: 490px;
-    height: 310px;
   }
-  .ideas .idea6 .idea-area {
-    background-size: 136%;
-    background-position-y: 52%;
-    background-position-x: 39%;
+  .ideas .idea1 .idea-area .idea-content .image {
+    margin-top: -3%;
+  }
+  .ideas .idea2 .idea-area .idea-content .image {
+    margin-top: -3%;
+    margin-left: -12%;
+  }
+  .ideas .idea3 .idea-area .idea-content .image {
+    margin-left: -58%;
+    margin-left: -3%;
+  }
+  .ideas .idea4 .idea-area .idea-content .image {
+    margin-left: -14%;
+    margin-top: -3%;
+  }
+  .ideas .idea5 .idea-area .idea-content .image {
+    margin-top: -8%;
+    margin-left: -12%;
     width: 490px;
-    height: 310px;
   }
-  .ideas .idea7 .idea-area {
-    background-size: 217%;
-    background-position-x: 88%;
-    width: 235px;
-    height: 310px;
+  .ideas .idea6 .idea-area .idea-content .image {
+    margin-top: -8%;
+    margin-left: -11%;
+  }
+  .ideas .idea7 .idea-area .idea-content .image {
+    margin-left: -50%;
+    margin-top: -3%;
   }
 
   .searchpartners__title {
@@ -332,44 +320,37 @@
     margin-left: 309px;
     margin-right: 552px;
   }
-  .ideas .idea1 .idea-area {
-    background-size: 167%;
-    background-position-x: 45%;
-    background-position-y: 44%;
+  .ideas .idea1 .idea-area .idea-content .image {
+    margin-left: -20%;
+  }
+  .ideas .idea2 .idea-area .idea-content .image {
+    margin-top: -2%;
+    margin-left: -3%;
+  }
+  .ideas .idea3 .idea-area .idea-content .image {
+    margin-left: -48%;
+    margin-top: -2%;
+  }
+  .ideas .idea4 .idea-area .idea-content .image {
+    margin-left: -25%;
+    margin-top: -10%;
+  }
+  .ideas .idea5 .idea-area .idea-content .image {
+    margin-left: 0;
+  }
+  .ideas .idea6 .idea-area .idea-content .image {
+    margin-top: -10%;
+    margin-left: -2%;
+  }
+  .ideas .idea7 .idea-area .idea-content .image {
+    margin-left: -42%;
+    margin-top: -3%;
+  }
+  .ideas .idea1 .idea-area, .ideas .idea2 .idea-area, .ideas .idea3 .idea-area, .ideas .idea4 .idea-area, .ideas .idea7 .idea-area {
     width: 300px;
   }
-  .ideas .idea2 .idea-area {
-    background-size: 112%;
-    background-position-x: 38%;
-    width: 300px;
-  }
-  .ideas .idea3 .idea-area {
-    background-size: 211%;
-    background-position-x: 90%;
-    background-position-y: 58%;
-    width: 300px;
-  }
-  .ideas .idea4 .idea-area {
-    background-size: 189%;
-    background-position-x: 29%;
-    background-position-y: 58%;
-    width: 300px;
-  }
-  .ideas .idea5 .idea-area {
-    background-size: 102%;
-    background-position-y: 53%;
+  .ideas .idea5 .idea-area, .ideas .idea6 .idea-area {
     width: 620px;
-  }
-  .ideas .idea6 .idea-area {
-    background-size: 106%;
-    background-position-y: 48%;
-    width: 620px;
-  }
-  .ideas .idea7 .idea-area {
-    background-size: 183%;
-    background-position-x: 98%;
-    background-position-y: 62%;
-    width: 300px;
   }
   .ideas__wrapper {
     max-width: 960px;
