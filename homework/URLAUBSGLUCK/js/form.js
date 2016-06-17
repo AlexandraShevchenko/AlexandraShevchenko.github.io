@@ -56,5 +56,8 @@ function loadGridImages() {
 
 };
 
-$("#form").submit(loadGridImages);
-loadGridImages(); // Load initial random images
+$(function() {
+	$("#form").submit(loadGridImages);
+	loadGridImages(); // Load initial random images
+});
+
