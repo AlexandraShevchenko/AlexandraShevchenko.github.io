@@ -1,23 +1,58 @@
-$(function(){
-  $('#form').submit(function(e) {
-    e.preventDefault();
+function loadGridImages() {
+	var query = $("#textfield").val();
+	var api = "https://pixabay.com/api/";
+	var apiKey = "2714307-54c654f67ca3fd61019f64f4c";
+	var count = 7;
 
-var text = $('#textfield').val();
+	$.ajax({
+		method: "GET",
+		url: api,
+		data: {
+			key: apiKey,
+			per_page: count,
+			q: query
+		},
+		success: function(data) {
+			var container = $(".ideas .GRID");
 
-  $.ajax({
-             url:'https://pixabay.com/api/?key=2714307-54c654f67ca3fd61019f64f4c&q= '+ text +' &image_type=photo',
-             dataType : "jsonp",
+			if (data.hits.length) {
+				container.empty();
 
-             success: function(data){
-              console.log("data",data);
+				data.hits.forEach(function(imageData) {
+					var image = buildImage(imageData.webformatURL, imageData.tags);
+					container.append(image);
+				});
+			}
 
-              $.each(data.hits, function(i, val){
+			$('.GRID').masonry({
+				itemSelector: '.GRID-ITEM',
+				isFitWidth: true,
+				percentPosition: true,
+				isResizable: true,
+				isAnimated: true,
+				animationOptions: {
+					queue: false,
+					duration: 500
+				}
+			});
+		}
+	});
 
-              var inner = document.getElementByClassName("GRID-ITEM");
+	function buildImage(url, title) {
+		var template =
+			"<div class='idea-item GRID-ITEM'>" +
+				"<div class='idea-area'>" +
+					"<div class='idea-content'>" +
+						"<div>{title}</div>" +
+                		"<div class='image'><img src='{url}' /></div>" +
+					"</div>" +
+				"</div>" +
+			"</div>";
 
-              var inner = '<img src="' + val.webformatURL + '">';
-    });
-    },
-    });
-  });
-});
+		return $(template.replace("{url}", url).replace("{title}", title));
+	}
+
+};
+
+$("#form #search-btn").on("click", loadGridImages);
+loadGridImages(); // Load initial random images
