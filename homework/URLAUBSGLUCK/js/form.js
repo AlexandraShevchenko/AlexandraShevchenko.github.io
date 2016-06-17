@@ -51,7 +51,8 @@ function loadGridImages() {
 
 		return $(template.replace("{url}", url).replace("{title}", title));
 	}
-
+	
+	return false;
 };
 
 $("#form").on("submit", loadGridImages);
