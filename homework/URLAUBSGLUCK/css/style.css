@@ -318,9 +318,6 @@ article {
   cursor: pointer;
 }
 
-.GRID {
-  margin: 0 auto;
-}
 .GRID:after {
   content: '';
   display: block;
@@ -360,8 +357,7 @@ article {
   vertical-align: middle;
   position: absolute;
   z-index: 1;
-  width: 100%;
-  top: 45%;
+  width: 300px;
 }
 .ideas .idea-item .idea-area .idea-content .image {
   position: relative;
@@ -371,35 +367,6 @@ article {
   padding-right: 50px;
   padding-left: 48px;
 }
-.ideas .idea1 .idea-area .idea-content .image {
-  margin-left: -23%;
-  margin-top: -32%;
-}
-.ideas .idea2 .idea-area .idea-content .image {
-  margin-top: -41%;
-  margin-left: -5px;
-}
-.ideas .idea3 .idea-area .idea-content .image {
-  margin-left: -47%;
-  margin-top: -14%;
-}
-.ideas .idea4 .idea-area .idea-content .image {
-  margin-left: -10%;
-  margin-top: -24%;
-}
-.ideas .idea5 .idea-area .idea-content .image {
-  margin-top: -27%;
-  margin-left: -27%;
-}
-.ideas .idea6 .idea-area .idea-content .image {
-  margin-top: -14%;
-  margin-left: -24%;
-}
-.ideas .idea7 .idea-area .idea-content .image {
-  margin-left: -44%;
-  margin-top: -12%;
-}
-
 .searchpartners__title {
   font-size: 22px;
   text-align: center;
