@@ -2,7 +2,7 @@ function loadGridImages() {
 	var query = $("#textfield").val();
 	var api = "https://pixabay.com/api/";
 	var apiKey = "2714307-54c654f67ca3fd61019f64f4c";
-	var count = 7;
+	var count = 9;
 
 	$.ajax({
 		method: "GET",
@@ -39,10 +39,10 @@ function loadGridImages() {
 	});
 
 	function buildImage(url, title) {
-		var template =
+		var template = 
 			"<div class='idea-item GRID-ITEM'>" +
-				"<div class='idea-area'>" +
-					"<div class='idea-content'>" +
+				"<div class='idea-area'>" + 
+					"<div class='idea-content'>" + 
 						"<div>{title}</div>" +
                 		"<div class='image'><img src='{url}' /></div>" +
 					"</div>" +
@@ -54,5 +54,5 @@ function loadGridImages() {
 
 };
 
-$("#form #search-btn").on("click", loadGridImages);
+$("#form").on("submit", loadGridImages);
 loadGridImages(); // Load initial random images
