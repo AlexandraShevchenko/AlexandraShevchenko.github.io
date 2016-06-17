@@ -53,6 +53,7 @@ $(document).ready(function(){
 
 	$('.GRID').masonry({
 		itemSelector: '.GRID-ITEM',
+		columnWidth: 100,
 		isFitWidth: true,
 		percentPosition: true,
 		isResizable: true,
