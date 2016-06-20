@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HW_23-24</title>
+    <link rel="stylesheet" href="src/css/zero.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <script data-main="src/js/app" src="src/js//lib/require.js"></script>
+
+    <body>
+        <script type="text/template" id="wrapper-template">
+            <div class="wrapper">
+                <h1>ToDoList</h1>
+                <ul class="item-list"></ul>
+                <div class="controlls">
+                    <input type="text" class="item-value"
+                    placeholder="Write new item">
+                    <button class="item-add">Add</button>
+                </div>
+            </div>
+        </script>
+        <script type="text/template" id="list-template">
+            <% for (var i =0; i<data.length; i++) { %>
+                <li>
+                    <input type="checkbox" class="chek-list">
+                    <input type="text" class="edit-list" disabled="disabled"
+                    value="<%= data[i] %>"
+                    title="You TODO - check release and remove after.">
+                    <span data-value="<%= data[i] %>" class="item-edit">
+                      <img class="icon icone-edit" src="src/img/edit.svg"
+                      width="25"  alt="edit" title="Edit item">
+                    </span>
+                    <span data-value="<%= data[i] %>" class="item-delete">
+                      <img class="icon icone-delete" src="src/img/delete.svg"
+                      width="25" alt="delete"  title="Delete item">
+                    </span>
+                </li>
+                <% }; %>
+        </script>
+    </body>
+
+</html>
