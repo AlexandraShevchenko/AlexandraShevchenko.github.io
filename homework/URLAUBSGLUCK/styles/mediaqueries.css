@@ -172,6 +172,7 @@
 
   .searchpartners {
     float: left;
+    margin-left: 58px;
   }
   .searchpartners__title {
     font-family: "MontserratB", sans-serif;
@@ -267,30 +268,30 @@
 
   .article__p {
     float: right;
-    margin-right: 521px;
+    margin-right: 590px;
     padding-top: 65px;
   }
   .article__first, .article__second, .article__third, .article__fourth {
     float: left;
   }
   .article__first {
-    margin-left: 265px;
+    margin-left: 326px;
     margin-top: 113px;
   }
   .article__second {
     margin-top: 42px;
-    margin-left: 264px;
+    margin-left: 275px;
   }
   .article__third {
-    margin-left: -473px;
+    margin-left: -477px;
     margin-top: 20px;
   }
   .article__fourth {
-    margin-left: 6px;
+    margin-left: 38px;
     margin-top: 41px;
   }
   .article__button {
-    margin-right: 623px;
+    margin-right: 710px;
     margin-top: 22px;
   }
 
@@ -299,7 +300,7 @@
   }
   .ideas__title {
     margin-left: 309px;
-    margin-right: 552px;
+    margin-right: 625px;
   }
   .ideas .idea-item .idea-area {
     width: 300px;
@@ -309,7 +310,7 @@
   }
   .ideas__wrapper {
     max-width: 960px;
-    margin: 0 240px;
+    margin: 0 319px;
   }
   .ideas .idea-item .idea3 .idea-area .idea-content div {
     padding-left: 41px;
@@ -351,6 +352,6 @@
     margin-right: 730px;
   }
   .footer__section--clogo {
-    margin-right: 216px;
+    margin-right: 380px;
   }
 }
