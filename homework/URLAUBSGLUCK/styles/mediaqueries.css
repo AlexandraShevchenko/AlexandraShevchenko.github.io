@@ -172,7 +172,6 @@
 
   .searchpartners {
     float: left;
-    margin-left: 58px;
   }
   .searchpartners__title {
     font-family: "MontserratB", sans-serif;
@@ -255,7 +254,7 @@
     width: 300px;
   }
   .howitworks__wrapper {
-    margin: 10px 19%;
+    margin: 10px 16%;
   }
   .howitworks__step-item--step-area .step-contentBG .slideitem img {
     margin: -8% 0 0 -57%;
@@ -268,30 +267,30 @@
 
   .article__p {
     float: right;
-    margin-right: 590px;
+    margin-right: 35%;
     padding-top: 65px;
   }
   .article__first, .article__second, .article__third, .article__fourth {
     float: left;
   }
   .article__first {
-    margin-left: 326px;
+    margin-left: 17%;
     margin-top: 113px;
   }
   .article__second {
     margin-top: 42px;
-    margin-left: 275px;
+    margin-left: 19%;
   }
   .article__third {
-    margin-left: -477px;
+    margin-left: -33%;
     margin-top: 20px;
   }
   .article__fourth {
-    margin-left: 38px;
+    margin-left: 1%;
     margin-top: 41px;
   }
   .article__button {
-    margin-right: 710px;
+    margin-right: 43%;
     margin-top: 22px;
   }
 
@@ -299,8 +298,8 @@
     min-width: 960px !important;
   }
   .ideas__title {
-    margin-left: 309px;
-    margin-right: 625px;
+    margin-left: 29%;
+    margin-right: 38%;
   }
   .ideas .idea-item .idea-area {
     width: 300px;
@@ -310,7 +309,7 @@
   }
   .ideas__wrapper {
     max-width: 960px;
-    margin: 0 319px;
+    margin: 0 18%;
   }
   .ideas .idea-item .idea3 .idea-area .idea-content div {
     padding-left: 41px;
@@ -349,9 +348,9 @@
     margin-left: 258px;
   }
   .footer__section--partners {
-    margin-right: 730px;
+    margin-right: 45%;
   }
   .footer__section--clogo {
-    margin-right: 380px;
+    margin-right: 23%;
   }
 }
