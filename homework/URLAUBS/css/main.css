@@ -1,0 +1,473 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,300italic,400italic,500italic,700italic)';
+body {
+  border-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: white; }
+
+.wrapper {
+  width: 100%;
+  overflow-x: hidden; }
+
+header {
+  background: url("../images/bg.jpg") center no-repeat; }
+  header .logo {
+    padding-bottom: 136px;
+    text-align: center; }
+
+.login_item {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 120px;
+  width: 84px; }
+
+.login_link {
+  line-height: 30px;
+  color: white; }
+
+.login_link:hover {
+  color: #ff4e50; }
+
+.login_item:last-child {
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 20px; }
+
+.logo_title {
+  font-weight: bold;
+  font-size: 20px; }
+
+p.logo_dreams, p.logo_dreams p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px; }
+
+.logo_find_wrapper {
+  display: block;
+  margin: 20px auto; }
+
+.logo_find {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 18px; }
+
+.logo_search_link {
+  display: block;
+  border-radius: 20px;
+  font-weight: bold;
+  line-height: 38px;
+  width: 270px;
+  height: 38px;
+  margin: 0 auto;
+  color: white;
+  background-color: #ff4e50; }
+
+.logo_search_link:hover {
+  color: #ff4e50;
+  background-color: #fff; }
+
+.tablet {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .tablet {
+    display: inline-block; }
+  .mobile {
+    display: none; }
+  .logo_float {
+    overflow: hidden;
+    zoom: 1;
+    /* for IE */ }
+  .login_item_wrapper {
+    float: right;
+    padding-top: 10px;
+    margin-right: 50px; }
+  .logo_title_wrapper {
+    float: left;
+    margin-left: 50px;
+    margin-top: 44px; }
+  p.logo_dreams {
+    font-size: 52px; }
+  .logo_find.tablet {
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 36px; }
+  header .logo {
+    padding-bottom: 220px; }
+  header {
+    margin-bottom: 95px; } }
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 940px;
+    margin: 0 auto; }
+  .logo_search_link {
+    font-size: 14px;
+    width: 225px; } }
+
+.content {
+  text-align: center; }
+  .content .content_name {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    margin: 20px 10px; }
+
+.step_1 {
+  background-image: url(../images/step1.jpg); }
+
+.step_2 {
+  background-image: url(../images/step2.jpg); }
+
+.step_3 {
+  background-image: url(../images/step3.jpg); }
+
+.step_1, .step_2, .step_3 {
+  margin: 0 auto;
+  width: 300px;
+  height: 240px;
+  margin-top: 12px;
+  text-align: left;
+  position: relative; }
+  .step_1 .step_red, .step_2 .step_red, .step_3 .step_red {
+    font-weight: 300;
+    font-size: 10px;
+    display: inline-block;
+    margin-top: 60px;
+    background-color: #ff4e50;
+    border-radius: 10px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2; }
+    .step_1 .step_red p, .step_2 .step_red p, .step_3 .step_red p {
+      padding: 5px 15px; }
+  .step_1 .step_title, .step_2 .step_title, .step_3 .step_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 25px;
+    line-height: 30px;
+    position: relative;
+    z-index: 2; }
+  .step_1 .step_text, .step_2 .step_text, .step_3 .step_text {
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    margin: 20px 20px auto 20px;
+    position: relative;
+    z-index: 2; }
+  .step_1 figcaption:before, .step_2 figcaption:before, .step_3 figcaption:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+    /* IE6-9 */
+    opacity: 1;
+    border-radius: 5px; }
+  .step_1 figcaption:before, .step_2 figcaption:before, .step_3 figcaption:before {
+    transition: opacity 0.35s; }
+
+.step_1:hover figcaption:before,
+.step_2:hover figcaption:before,
+.step_3:hover figcaption:before {
+  opacity: 0; }
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none; }
+  .tablet {
+    display: block; }
+  .content .content_name {
+    margin-bottom: 40px; }
+  #owl-carousel {
+    width: 236px; }
+  .step_items_1,
+  .step_items_2,
+  .step_items_3 {
+    width: 235px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+    padding: 3px; }
+  .step_1, .step_2, .step_3 {
+    margin: 0 auto;
+    width: 236px;
+    text-align: left;
+    position: absolute;
+    background: none;
+    bottom: 35px;
+    left: 0;
+    z-index: 1; } }
+
+@media screen and (min-width: 1024px) {
+  #owl-carousel {
+    width: 300px; }
+  .step_items_1,
+  .step_items_2,
+  .step_items_3 {
+    width: 300px;
+    height: 400px;
+    padding: 3px; }
+  .step_1, .step_2, .step_3 {
+    width: 300px; } }
+
+.partner {
+  text-align: center;
+  color: black; }
+  .partner .partner_title {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    margin: 20px 10px; }
+  .partner .partner_item {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 250px; }
+
+.partner_img {
+  position: relative;
+  width: 140px;
+  margin: 0 auto; }
+
+img.some {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.partner_name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 12px auto; }
+
+.partner_bio {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 10px 14px;
+  color: #666;
+  line-height: 1.15; }
+
+.partner_search_link {
+  display: block;
+  border-radius: 20px;
+  font-weight: bold;
+  line-height: 38px;
+  width: 270px;
+  height: 38px;
+  margin: 0 auto;
+  color: #ff4e50;
+  background-color: white;
+  border: 2px solid #ff4e50; }
+
+.partner_search_link:hover {
+  color: #fff;
+  background-color: #ff4e50; }
+
+@media screen and (min-width: 768px) {
+  .partner {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 90px; }
+  .partner_title {
+    padding-top: 70px; }
+  .partner_group1 {
+    width: 250px;
+    float: left; }
+  .partner_group2 {
+    width: 250px;
+    float: right; }
+  .partner_groups {
+    overflow: hidden;
+    zoom: 1; }
+  .partner_search_link {
+    margin-top: 14px;
+    width: 190px; } }
+
+@media screen and (min-width: 1024px) {
+  .partner {
+    width: 940px; }
+  .partner_group1, .partner_group2 {
+    width: 470px; }
+  .partner .partner_item {
+    width: 230px;
+    float: left; } }
+
+.masonry_img {
+  width: 320px;
+  text-align: center;
+  margin: 0 auto; }
+  .masonry_img .logo_search_link {
+    margin-bottom: 40px; }
+
+.grid-item {
+  width: 300px;
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 120px;
+  overflow: hidden; }
+
+.masonry_title {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+  margin: 20px 10px; }
+
+.grid-item::after {
+  content: '';
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 0;
+  font-size: 22px;
+  text-align: center; }
+
+.grid-item.sport::after {
+  content: 'Sport and Activity'; }
+
+.grid-item.yoga::after {
+  content: 'Wellnes and Health'; }
+
+.grid-item.extreme::after {
+  content: 'Extreme Sports and Expeditions'; }
+
+.grid-item.games::after {
+  content: 'Games'; }
+
+.grid-item.cultur::after {
+  content: 'Culture and Education'; }
+
+.grid-item.relax::after {
+  content: 'Relaxation'; }
+
+.grid-item.travel::after {
+  content: 'Travelling'; }
+
+img.photo {
+  padding: 5px;
+  border-radius: 10px; }
+
+.question {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #333;
+  margin: 10px 0; }
+
+.masonry_interes {
+  width: 280px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  text-indent: 20px;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  margin: 10px 0; }
+
+.masonry_interes:focus {
+  outline-color: #ff4e50;
+  outline-style: auto;
+  outline-width: 0px;
+  border-color: #ff4e50; }
+
+@media screen and (min-width: 768px) {
+  .masonry_img {
+    width: 768px; }
+  .grid-item img.photo {
+    border-radius: 10px; }
+  .grid-item {
+    width: 32%;
+    height: 310px;
+    margin-bottom: 10px; }
+  .grid-item.cultur,
+  .grid-item.relax {
+    width: 65%; }
+  .masonry_title {
+    margin-top: 90px;
+    margin-bottom: 40px; }
+  .question {
+    margin-bottom: 36px; }
+  .masonry_interes {
+    width: 238px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 80px; }
+  form a.logo_search_link {
+    width: 160px;
+    display: inline-block;
+    border: 2px solid white; }
+  form a.logo_search_link:hover {
+    border: 2px solid #ff4e50; } }
+
+@media screen and (min-width: 1024px) {
+  .masonry_img {
+    width: 940px; } }
+
+.red_line {
+  width: 100%;
+  height: 4px;
+  background-color: #ff4e50; }
+
+footer {
+  text-align: center; }
+  footer p.logo_title {
+    color: #ff4e50;
+    font-size: 16px;
+    display: block;
+    padding: 20px 0; }
+  footer p.p_black {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif; }
+  footer p.copy {
+    color: #ccc;
+    font: bold 10px "Montserrat", sans-serif;
+    display: block;
+    padding: 20px 0 16px 0; }
+  footer a.areto img {
+    width: 110px; }
+
+.footer_list {
+  display: inline-block;
+  padding: 10px 5px 20px 5px; }
+
+.footer_list a {
+  font: lighter 14px "Roboto", sans-serif;
+  color: #666; }
+
+@media screen and (min-width: 768px) {
+  footer {
+    width: 768px;
+    margin: 0 auto; }
+  footer p.logo_title {
+    padding: 0; }
+  .footer_l {
+    float: left;
+    padding: 40px; }
+  .footer_l:last-child {
+    float: right;
+    text-align: right; }
+  .footer_list {
+    display: block;
+    text-align: left;
+    padding: 10px 0 0 0; }
+  footer p.copy {
+    padding-top: 0px; } }
+
+@media screen and (min-width: 1024px) {
+  footer {
+    width: 940px; } }
